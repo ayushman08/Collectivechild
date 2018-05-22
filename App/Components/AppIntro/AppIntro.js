@@ -84,7 +84,8 @@ export default class App extends Component {
  
    _onDone = () => {
      //changed
-   Actions.contact();
+  //  Actions.contact();
+  Actions.childInfromationDob()
   }
 
   onSkip=()=>{
@@ -104,7 +105,7 @@ export default class App extends Component {
         onSkip={this.onSkip}
         />
         <View  style={{position:"absolute",bottom:100,left:0,right:0,justifyContent:"center",alignItems:"center"}}>
-        <TouchableWithoutFeedback   onPress={() => {null
+         <TouchableWithoutFeedback   onPress={() => {null
                //changed
                   this.setState({modalVisible:true})
                 }}>
@@ -226,7 +227,7 @@ export default class App extends Component {
              <Text style={{color:"white",textAlign:"center",fontWeight:"400", fontSize: 16}}>SUBMIT</Text>
              </Button>
 
-          <TouchableWithoutFeedback
+            <TouchableWithoutFeedback
                  onPress={() => {
                  this.setState({passwordComponentVisible:false})
                  
@@ -236,7 +237,7 @@ export default class App extends Component {
             </View>
         </ImageBackground>
         
-        </Modal>
+      </Modal>
  </View>
    
 

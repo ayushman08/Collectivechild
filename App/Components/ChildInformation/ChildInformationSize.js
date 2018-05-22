@@ -39,6 +39,8 @@ componentWillMount() {
             <View style={{flexDirection:"row",alignItems:"center"}}>
             <View style={styles.viewStyle}><Text> 0-3 </Text></View>
             </View>
+        
+        {/* FlatList Use for Dyanamic size */}
      
 
 

@@ -13,7 +13,9 @@ import ContactComponent from "./App/Components/ContactComponent/ContactComponent
 import ServicePreferences from "./App/Components/ServicePreferenceComponent/ServicePreferenceComponent"
 import ServicePreferencesDecided from "./App/Components/ServicePreferenceComponent/ServiceComponentDecideCompoenent"
 import ChildInformationSize from "./App/Components/ChildInformation/ChildInformationSize"
-// import AppGlobalConfig from './App/AppGlobalConfig/AppConfig';
+import TalkToUs from "./App/Components/TalkToUs/TalkToUs"
+import ChildInformationDob from "./App/Components/ChildInformation/ChildInformationDob"
+
 
 const scenes = Actions.create(
   <Scene key="root">
@@ -32,7 +34,7 @@ const scenes = Actions.create(
 hideNavBar={true}
 />
 
-<Scene key="servicePreferences" component={ServicePreferences}
+    <Scene key="servicePreferences" component={ServicePreferences}
       hideNavBar={true}
   
     />
@@ -43,16 +45,17 @@ hideNavBar={true}
     />
 
      <Scene key="childSizeInformation" component={ChildInformationSize}
-      hideNavBar={true}
-  
+      hideNavBar={true} 
     />
 
-</Scene>
+     <Scene key="childInfromationDob" component={ChildInformationDob}
+      hideNavBar={true}
+       />
 
-
-   
-
-    
+    <Scene key="talktous" component={TalkToUs}
+      hideNavBar={true} 
+    />
+   </Scene>   
 );
 
 export default class App extends Component {

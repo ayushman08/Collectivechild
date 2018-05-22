@@ -18,8 +18,7 @@ const { width, height } = Dimensions.get('window');
 
 
 export default  class ServiceComponentDecided extends Component {
-
-    constructor() {
+  constructor() {
         super();
         this.state = {
          
