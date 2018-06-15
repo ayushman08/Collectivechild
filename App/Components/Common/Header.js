@@ -3,10 +3,11 @@ import { Text, View } from 'react-native';
 
 
 const Header = (props) => {
-  const { textStyle, viewStyle } = styles;
+  const { textStyle, viewStyle,textStyle1 } = styles;
 
   return (
     <View style={viewStyle}>
+      <Text style={textStyle1}>{props.screenCount}</Text>
       <Text style={textStyle}>{props.headerText}</Text>
     </View>
   );
@@ -14,8 +15,9 @@ const Header = (props) => {
 
 const styles = {
   viewStyle: {
+    flexDirection:'row',
     backgroundColor: '#F8F8F8',
-    justifyContent: 'center',
+    
     alignItems: 'center',
     height: 60,
     paddingTop: 15,
@@ -26,7 +28,15 @@ const styles = {
     position: 'relative'
   },
   textStyle: {
-    fontSize: 20
+    fontSize: 20,
+    textColor:'black'
+  },
+  textStyle1: {
+    flex:0.5,
+    marginLeft: 10,
+    fontSize: 20,
+    textColor:'black',
+    fontWeight:"800"
   }
 };
 

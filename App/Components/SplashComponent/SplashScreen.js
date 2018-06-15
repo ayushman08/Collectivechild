@@ -21,18 +21,18 @@ class SplashScreen extends Component {
     constructor() {
         super();
         this.state = {
-            accessToken: '',
+           
         };
     }
 
 componentWillMount() {
        setTimeout(() => {
-           Actions.appIntro({type:'reset'});
-            // Actions.registerScreen();
+           Actions.appIntro({type:'reset', notFromSplash:false});
+           
         }, 2000);
     }
 
-    render() {
+ render() {
         return (
              <ImageBackground style={ styles.imgBackground } 
                  resizeMode='cover' 

@@ -1,6 +1,8 @@
 package com.collectivechild;
 
 import com.facebook.react.ReactActivity;
+import com.paypal.mitjain.braintree.BraintreePackage;
+import com.paypal.mitjain.braintree.BraintreePackage;
 
 public class MainActivity extends ReactActivity {
 
